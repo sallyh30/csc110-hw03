@@ -26,6 +26,7 @@ def read_five_ints():
         in_str = input("Give me the next grade in [0 to 10]:")
         if not in_str.isdigit():
             print("Error in read_five_ints: input string is not for an integer")
+            exit()
         num = int(in_str)
         if num < 0 or num > 10:
             print ("Error in read_five_ints: input integer outside of range")
